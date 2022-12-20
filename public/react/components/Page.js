@@ -4,7 +4,7 @@ import apiURL from "../api";
 export const Page = (props) => {
 
   //creaating state for data to be displayed
-  [currentData, setCurrentData] = useState(undefined);
+  const [currentData, setCurrentData] = useState(undefined);
 
   //handleClick function to fetch data and set the state above
   const handleClick = async () => {
@@ -19,7 +19,11 @@ export const Page = (props) => {
       {props.page.title}
       </h3>
       <div>
-        {currentData ? currentData.content : ""}
+        <h4>{currentData ?`Title: ${currentData.title}` :''}</h4>
+        <h4>{currentData ?`Author: ${currentData.author.name}` :''}</h4>
+        <h4>{currentData ?`Content: ${currentData.content}` :''}</h4>
+        <h4>{currentData ?`Date: ${currentData.createdAt.slice(0, 10)}` : ''}</h4>
+        <h4>{currentData ?<button onClick={() => {setCurrentData(undefined)}}>go back</button> : ''}</h4>
       </div>
   </>
 } 

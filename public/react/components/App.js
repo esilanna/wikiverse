@@ -28,7 +28,6 @@ export const App = () => {
 				<h1>WikiVerse</h1>
 				<h2 className='subheading'>An interesting 📚</h2>
 			</div>
-
 			<h3 className="directions">Click an article title to read</h3>
 			<div className='page_list'><PagesList pages={pages} /></div>
 		</main>
