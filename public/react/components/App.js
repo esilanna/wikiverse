@@ -23,10 +23,14 @@ export const App = () => {
 	}, []);
 
 	return (
-		<main>	
-      <h1>WikiVerse</h1>
-			<h2>An interesting 📚</h2>
-			<PagesList pages={pages} />
+		<main>
+			<div className='heading'>
+				<h1>WikiVerse</h1>
+				<h2 className='subheading'>An interesting 📚</h2>
+			</div>
+
+			<h3 className="directions">Click an article title to read</h3>
+			<div className='page_list'><PagesList pages={pages} /></div>
 		</main>
 	)
 }

@@ -1,10 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 * {
   margin: 0;
   box-sizing: border-box;
-  background-color: rgb(223, 223, 223);
 }
 
 main {
-  padding: 1rem;
   height: 100vh;
+  font-family: "inter";
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading{
+  font-size: 64px;
+  margin-bottom: 0.5em;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items:center;
+}
+.subheading {
+  font-size: 32px;
+}
+
+.directions {
+  font-size: 32px;
+  color: #6C86E3;
+  margin-top: 3em;
+}
+
+.page_list {
+  font-size: 28px;
+  padding: 1em;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
 }
