@@ -22,6 +22,7 @@ export const Page = (props) => {
         <h4>{currentData ?`Title: ${currentData.title}` :''}</h4>
         <h4>{currentData ?`Author: ${currentData.author.name}` :''}</h4>
         <h4>{currentData ?`Content: ${currentData.content}` :''}</h4>
+        <h4>{currentData ?`Tags: ${currentData.tags.map((tag)=>" " + tag.name)}` :''}</h4>
         <h4>{currentData ?`Date: ${currentData.createdAt.slice(0, 10)}` : ''}</h4>
         <h4>{currentData ?<button onClick={() => {setCurrentData(undefined)}}>go back</button> : ''}</h4>
       </div>
